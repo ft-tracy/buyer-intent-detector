@@ -1,0 +1,165 @@
+{
+  "n_total": 396,
+  "n_train": 312,
+  "n_test": 84,
+  "n_real": 336,
+  "n_synthetic": 60,
+  "split_note": "Test set contains real comments only",
+  "accuracy": 0.738,
+  "macro_f1": 0.536,
+  "per_class": {
+    "buying_intent": {
+      "precision": 0.429,
+      "recall": 0.5,
+      "f1-score": 0.462,
+      "support": 6
+    },
+    "complaint": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0
+    },
+    "other": {
+      "precision": 0.791,
+      "recall": 0.739,
+      "f1-score": 0.764,
+      "support": 46
+    },
+    "praise": {
+      "precision": 0.759,
+      "recall": 0.815,
+      "f1-score": 0.786,
+      "support": 27
+    },
+    "price_payment": {
+      "precision": 0.75,
+      "recall": 0.6,
+      "f1-score": 0.667,
+      "support": 5
+    }
+  },
+  "class_counts": {
+    "other": 192,
+    "praise": 118,
+    "buying_intent": 35,
+    "price_payment": 29,
+    "trust_concern": 12,
+    "complaint": 10
+  },
+  "class_counts_real": {
+    "other": 182,
+    "praise": 108,
+    "buying_intent": 25,
+    "price_payment": 19,
+    "trust_concern": 2
+  },
+  "class_counts_synthetic": {
+    "buying_intent": 10,
+    "price_payment": 10,
+    "trust_concern": 10,
+    "complaint": 10,
+    "praise": 10,
+    "other": 10
+  },
+  "cv": {
+    "n": 336,
+    "accuracy": 0.75,
+    "classes_scored": [
+      "buying_intent",
+      "price_payment",
+      "praise",
+      "other"
+    ],
+    "macro_f1_scored_classes": 0.682,
+    "per_class": {
+      "buying_intent": {
+        "f1-score": 0.522,
+        "support": 25
+      },
+      "price_payment": {
+        "f1-score": 0.667,
+        "support": 19
+      },
+      "trust_concern": {
+        "f1-score": 0.0,
+        "support": 2
+      },
+      "complaint": {
+        "f1-score": 0.0,
+        "support": 0
+      },
+      "praise": {
+        "f1-score": 0.744,
+        "support": 108
+      },
+      "other": {
+        "f1-score": 0.796,
+        "support": 182
+      }
+    }
+  },
+  "top_terms": {
+    "buying_intent": [
+      "me",
+      "books",
+      "your",
+      "have to",
+      "nataka",
+      "is this",
+      "to",
+      "your contacts"
+    ],
+    "complaint": [
+      "payment",
+      "no",
+      "has been",
+      "kwa",
+      "my",
+      "title",
+      "been",
+      "terrible no"
+    ],
+    "other": [
+      "nice",
+      "beautiful",
+      "beautiful place",
+      "just",
+      "delivering",
+      "stories just",
+      "stories",
+      "no stories"
+    ],
+    "praise": [
+      "great",
+      "amazing",
+      "this is",
+      "amg",
+      "woooooooow",
+      "wow",
+      "congratulations",
+      "love"
+    ],
+    "price_payment": [
+      "how much",
+      "much",
+      "how",
+      "price",
+      "bei",
+      "hamsemi bei",
+      "hamsemi",
+      "mbona hamsemi"
+    ],
+    "trust_concern": [
+      "scam",
+      "the land",
+      "scam alert",
+      "alert",
+      "before",
+      "title",
+      "and licensed",
+      "registered and"
+    ]
+  },
+  "sklearn_version": "1.8.0"
+}
